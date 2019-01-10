@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/text_vechcleInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/vehicle_information"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_marginHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/information"
+            android:textSize="15sp"
+            android:typeface="sans"
+            android:layout_marginHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_vechcleInformation" />
+
+        <ImageView
+            android:id="@+id/image_newer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@+id/text_newer"
+            android:src="@drawable/register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/information" />
+
+        <TextView
+            android:id="@+id/text_newer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/or_2008_newer"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintStart_toEndOf="@id/image_newer"
+            app:layout_constraintTop_toBottomOf="@+id/information" />
+
+        <ImageView
+            android:id="@+id/image_doors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@+id/text_doors"
+            android:src="@drawable/register"
+            app:layout_constraintStart_toStartOf="@id/image_newer"
+            app:layout_constraintTop_toBottomOf="@id/image_newer" />
+
+        <TextView
+            android:id="@+id/text_doors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/doors"
+            android:typeface="monospace"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_newer"
+            app:layout_constraintTop_toBottomOf="@id/text_newer" />
+
+        <ImageView
+            android:id="@+id/image_notSalvages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@+id/text_not"
+            android:src="@drawable/register"
+            app:layout_constraintStart_toStartOf="@id/image_doors"
+            app:layout_constraintTop_toBottomOf="@id/image_doors" />
+
+        <TextView
+            android:id="@+id/text_not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/not_salvaged"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintStart_toStartOf="@id/text_doors"
+            app:layout_constraintTop_toBottomOf="@+id/text_doors" />
+
+        <TextView
+            android:id="@+id/text_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/year"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            app:layout_constraintStart_toStartOf="@id/image_notSalvages"
+            app:layout_constraintTop_toBottomOf="@+id/image_notSalvages" />
+
+        <TextView
+            android:id="@+id/textlist_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/search_year"
+            android:textSize="16sp"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            android:drawableRight="@android:drawable/ic_menu_more"
+            app:layout_constraintTop_toBottomOf="@+id/text_year" />
+
+        <TextView
+            android:id="@+id/text_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/make"
+            android:typeface="monospace"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_year"
+            app:layout_constraintTop_toBottomOf="@+id/textlist_year" />
+
+        <TextView
+            android:id="@+id/textlist_make"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/search_car"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            android:drawableRight="@android:drawable/ic_menu_more"
+            app:layout_constraintTop_toBottomOf="@+id/text_make"/>
+
+        <TextView
+            android:id="@+id/text_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/model"
+            android:typeface="monospace"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/textlist_make" />
+
+        <TextView
+            android:id="@+id/textlist_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/search_model"
+            android:drawableRight="@android:drawable/ic_menu_more"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_model" />
+
+        <TextView
+            android:id="@+id/text_doorsNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:typeface="monospace"
+            android:text="@string/nmber_of_doors"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/textlist_model" />
+
+        <TextView
+            android:id="@+id/textlist_doors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/searh_door"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="16dp"
+            android:drawableRight="@android:drawable/ic_menu_more"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            app:layout_constraintTop_toBottomOf="@+id/text_doorsNumber" />
+
+        <TextView
+            android:id="@+id/text_colour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/colour"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            app:layout_constraintTop_toBottomOf="@+id/textlist_doors" />
+
+        <TextView
+            android:id="@+id/textlist_colour"
+            android:layout_width="match_parent"
+            android:text="@string/search_colour"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            android:drawableRight="@android:drawable/ic_menu_more"
+            app:layout_constraintTop_toBottomOf="@+id/text_colour" />
+
+        <TextView
+            android:id="@+id/text_seatbealts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/number_of_seatBealts"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            app:layout_constraintTop_toBottomOf="@+id/textlist_colour" />
+
+        <TextView
+            android:id="@+id/textlist_seatbelats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_seatbealts"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="16sp"
+            android:drawableRight="@android:drawable/ic_menu_more"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            app:layout_constraintTop_toBottomOf="@+id/text_seatbealts" />
+
+
+
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/color"
+            android:text="@string/continue_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textlist_seatbelats" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

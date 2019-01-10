@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">VehicleRegister</string>
+    <string name="vehicle_information">Vehicle Information</string>
+    <string name="information">To qualify  you must be 19 years of age and have a vechile that meets the following requirments:</string>
+    <string name="or_2008_newer">2008 or newer</string>
+    <string name="doors">4 doors</string>
+    <string name="not_salvaged">Not salvaged</string>
+    <string name="year">YEAR</string>
+    <string name="make">MAKE</string>
+    <string name="model">MODEL</string>
+    <string name="nmber_of_doors">NUMBER OF DOORS</string>
+    <string name="colour">COLOUR</string>
+    <string name="number_of_seatBealts">NUMBER OF SEATBEALTS</string>
+    <string name="continue_">Continue</string>
+
+    <string-array name="year_array">
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+
+    </string-array>
+    <string-array name="make_array">
+        <item>Toyota</item>
+        <item>maruti</item>
+        <item>audi</item>
+        <item>mercedes</item>
+        <item>Hyundai</item>
+        <item>BMW</item>
+        <item>suzuki</item>
+        <item>TaTa</item>
+        <item>Honda</item>
+
+    </string-array>
+
+
+    <string-array name="model_array">
+        <item>camry</item>
+        <item>yaris</item>
+        <item>prius</item>
+        <item>fortuner</item>
+        <item>innova crysta</item>
+    </string-array>
+
+    <string-array name="doorno_array">
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="colour_array">
+        <item>Super White</item>
+        <item>Gray Metallic</item>
+        <item>Aqua Mica</item>
+        <item>Black Send Pearl</item>
+    </string-array>
+
+    <string-array name="seatbealts_array">
+        <item>4</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_year">Search Year</string>
+    <string name="search_car">Search Car</string>
+    <string name="search_model">Search model</string>
+    <string name="search_seatbealts">Search SeatBealts</string>
+    <string name="search_colour">Search colour</string>
+    <string name="searh_door">Search Door</string>
+
+</resources>
